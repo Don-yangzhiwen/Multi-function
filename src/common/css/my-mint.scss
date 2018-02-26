@@ -1,0 +1,10 @@
+@import './../../../static/hotcss/px2rem.scss';
+.mint-toast-text {
+    font-size: px2rem(14);
+}
+
+.mint-spinner-fading-circle {
+    display: inline-block;
+    width: px2rem(28) !important;
+    height: px2rem(28) !important;
+}

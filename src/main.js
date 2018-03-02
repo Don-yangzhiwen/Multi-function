@@ -6,6 +6,9 @@ import router from './router'
 import './../static/hotcss/hotcss'
 import './common/css/my-mint.scss'
 import P from './common/js/public'
+import 'swiper/dist/css/swiper.css'
+import './common/css/over.scss'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
 
 import {
   InfiniteScroll,
@@ -16,6 +19,7 @@ import {
 Vue.use(InfiniteScroll);
 Vue.component(Spinner.name, Spinner);
 Vue.component(Loadmore.name, Loadmore);
+Vue.use(VueAwesomeSwiper)
 Vue.prototype.P = P
 Vue.config.productionTip = false
 

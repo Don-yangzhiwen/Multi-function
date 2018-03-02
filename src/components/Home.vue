@@ -61,6 +61,24 @@ export default {
           src: 'threeNine.jpg',
           text: '三九手机网',
           linkTo: '/threeNine'
+        },
+        {
+          number: '08',
+          src: 'acrostic.jpg',
+          text: '藏头诗生成',
+          linkTo: '/Acrostic'
+        },
+        {
+          number: '09',
+          src: 'oilPrice.png',
+          text: '今日油价',
+          linkTo: '/OilPrice'
+        },
+        {
+          number: '10',
+          src: 'Health.png',
+          text: '健康资讯',
+          linkTo: '/Health'
         }
       ]
     }

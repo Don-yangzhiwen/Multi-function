@@ -1,1 +1,14 @@
 @import './../../../static/hotcss/px2rem.scss';
+.swiper-pagination-bullet {
+    width: px2rem(8);
+    height: px2rem(8);
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-right: px2rem(5);
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #fff;
+    opacity: 1;
+}

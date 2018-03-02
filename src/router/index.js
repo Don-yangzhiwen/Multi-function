@@ -9,6 +9,10 @@ import HotNews from '@/components/HotNews'
 import Weather from '@/components/Weather'
 import ThreeNine from '@/components/ThreeNine'
 import MobileDetails from '@/components/MobileDetails'
+import Acrostic from '@/components/Acrostic'
+import OilPrice from "@/components/Today'sOilPrice"
+import Health from '@/components/Health'
+import HealthDetail from '@/components/HealthDetail'
 
 Vue.use(Router)
 
@@ -50,6 +54,22 @@ export default new Router({
     path: '/threeNine/details/:id',
     name: 'MobileDetails',
     component: MobileDetails
+  }, {
+    path: '/Acrostic',
+    name: 'Acrostic',
+    component: Acrostic
+  }, {
+    path: '/OilPrice',
+    name: 'OilPrice',
+    component: OilPrice
+  }, {
+    path: '/Health',
+    name: 'Health',
+    component: Health
+  }, {
+    path: '/Health/detail/:id',
+    name: 'HealthDetail',
+    component: HealthDetail
   }, {
     path: '*',
     directives: '/'

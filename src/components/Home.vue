@@ -79,6 +79,12 @@ export default {
           src: 'Health.png',
           text: '健康资讯',
           linkTo: '/Health'
+        },
+        {
+          number: '11',
+          src: 'lfdJoke.png',
+          text: '健康资讯',
+          linkTo: '/lfdJoke'
         }
       ]
     }

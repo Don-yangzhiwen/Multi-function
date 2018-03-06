@@ -60,7 +60,9 @@
           </li>
         </ul>
         <div class="more">
-          点击查看更多
+          <router-link to="/Health/MoreDetail">
+            点击查看更多
+          </router-link>
         </div>
       </div>
       <Loading :isTrue="moreLoading"></Loading>
@@ -344,9 +346,12 @@ function askHealth(that, obj) {
     }
     .more {
       text-align: center;
-      line-height: px2rem(30);
-      color: #e01b1b;
-      text-decoration: underline;
+      a {
+        line-height: px2rem(30);
+        display: inline-block;
+        color: #e01b1b;
+        text-decoration: underline;
+      }
     }
   }
 }

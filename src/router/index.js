@@ -13,6 +13,8 @@ import Acrostic from '@/components/Acrostic'
 import OilPrice from "@/components/Today'sOilPrice"
 import Health from '@/components/Health'
 import HealthDetail from '@/components/HealthDetail'
+import HealthDetailMore from '@/components/HealthDetailMore'
+import LfdJoke from '@/components/LfdJoke'
 
 Vue.use(Router)
 
@@ -70,6 +72,14 @@ export default new Router({
     path: '/Health/detail/:id',
     name: 'HealthDetail',
     component: HealthDetail
+  }, {
+    path: '/Health/MoreDetail',
+    name: 'HealthDetailMore',
+    component: HealthDetailMore
+  }, {
+    path: '/lfdJoke',
+    name: 'LfdJoke',
+    component: LfdJoke
   }, {
     path: '*',
     directives: '/'

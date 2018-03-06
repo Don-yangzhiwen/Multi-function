@@ -9,6 +9,7 @@ import P from './common/js/public'
 import 'swiper/dist/css/swiper.css'
 import './common/css/over.scss'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
+import store from './store'
 
 import {
   InfiniteScroll,
@@ -27,6 +28,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  store,
   components: {
     App
   },

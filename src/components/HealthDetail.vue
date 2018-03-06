@@ -51,7 +51,7 @@ function askDetail(that, obj) {
     obj,
     function(data) {
       that.moreLoading = false
-      console.log(data)
+      // console.log(data)
       if (data.ret_code !== 0 || data.item === '') {
         that.error = '查询错误'
         that.data = false
@@ -61,7 +61,6 @@ function askDetail(that, obj) {
         that.data = true
         that.list = data.item
         that.lunbo = true
-        // console.log(that.list)
       }
     },
     function(error) {

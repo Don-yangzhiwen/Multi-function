@@ -19,7 +19,7 @@ import LfdJoke from '@/components/LfdJoke'
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
+  // mode: 'history', 默认hash
   routes: [{
     path: '/',
     name: 'Home',

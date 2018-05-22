@@ -5,7 +5,7 @@
       <ul>
         <li v-for='(item,index) in items' :key='index'>
           <router-link :to="item.linkTo">
-            <img :src='"/../../static/img/"+item.src' :alt="item.text">
+            <img :src='"./static/img/"+item.src' :alt="item.text">
             <p>{{item.text}}</p>
           </router-link>
         </li>

@@ -1,13 +1,9 @@
 <template>
   <div class="foot">
     <ul>
-      <li>
-        <i class="iconfont icon-file"></i>
-        <p>笑话</p>
-      </li>
-      <li>
-        <i class="iconfont icon-tupian"></i>
-        <p>图片</p>
+      <li v-for='(val,index) in list' :key='index' :class='num==index?"on": ""' @click="getNum(index)">
+        <i :class="'iconfont '+val.i"></i>
+        <p>{{val.p}}</p>
       </li>
     </ul>
   </div>
@@ -15,7 +11,25 @@
 <script>
 export default {
   data() {
-    return {}
+    return {
+      num: 0,
+      list: [
+        {
+          i: 'icon-file',
+          p: '笑话'
+        },
+        {
+          i: 'icon-tupian',
+          p: '图片'
+        }
+      ]
+    }
+  },
+  methods: {
+    getNum(index) {
+      this.num = index
+      this.$emit('getIndex', index)
+    }
   }
 }
 </script>
@@ -37,8 +51,10 @@ export default {
       text-align: center;
       i {
         font-size: px2rem(22);
-        color: #0066FF;
       }
+    }
+    .on {
+      color: #0066ff;
     }
   }
 }

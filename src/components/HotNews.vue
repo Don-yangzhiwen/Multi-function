@@ -13,7 +13,7 @@
 import RealTime from './RealTime'
 import ThisWeek from './ThisWeek'
 export default {
-  data() {
+  data () {
     return {
       msg: 'HotNews',
       titles: ['实时新闻热搜榜', '本周新闻热搜榜'],
@@ -25,12 +25,12 @@ export default {
     RealTime,
     ThisWeek
   },
-  mounted() {
+  mounted () {
     var a = this.$refs.news
     a[this.index].className = 'on'
   },
   methods: {
-    change: function(indexes) {
+    change: function (indexes) {
       var a = this.$refs.news
       for (var i = 0; i < a.length; i++) {
         a[i].className = ''
@@ -60,7 +60,7 @@ export default {
     li {
       text-align: center;
       flex: 1;
-      P {
+      p {
         height: px2rem(38);
         box-sizing: border-box;
         display: inline-block;

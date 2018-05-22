@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       msg: '多功能应用',
       items: [
@@ -47,7 +47,7 @@ export default {
         {
           number: '05',
           src: 'HotNews.jpg',
-          text: '身份证查询',
+          text: '新闻热搜榜',
           linkTo: '/HotNews'
         },
         {
@@ -83,13 +83,13 @@ export default {
         {
           number: '11',
           src: 'lfdJoke.png',
-          text: '健康资讯',
+          text: '来福岛笑话',
           linkTo: '/lfdJoke'
         }
       ]
     }
   },
-  mounted() {}
+  mounted () { }
 }
 </script>
 

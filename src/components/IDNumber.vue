@@ -22,7 +22,7 @@ import Loading from './Loading'
 import SearchBox from './SearchBox'
 import Header from './Header'
 export default {
-  data() {
+  data () {
     return {
       title: '身份证查询',
       data: false,
@@ -38,15 +38,15 @@ export default {
     SearchBox,
     Header
   },
-  mounted() {},
+  mounted () { },
   methods: {
-    get(msg) {
+    get (msg) {
       askHistory(this, msg)
     }
   }
 }
 
-function askHistory(that, value) {
+function askHistory (that, value) {
   that.data = false
   that.err = false
   that.moreLoading = true
@@ -55,7 +55,7 @@ function askHistory(that, value) {
     {
       id: value
     },
-    function(data) {
+    function (data) {
       that.moreLoading = false
       if (data.ret_code < 0 || !data.retData) {
         that.error = data.remark || data.retMsg
@@ -67,7 +67,7 @@ function askHistory(that, value) {
         that.lists = data.retData
       }
     },
-    function(error) {
+    function (error) {
       that.moreLoading = false
       that.data = false
       that.err = true
